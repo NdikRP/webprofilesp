@@ -46,6 +46,7 @@ header img {
   transform: scale(1.05); 
 }
 
+
 .navbar-toggler {
   background-color: transparent;
   border: none;
@@ -173,11 +174,11 @@ header img {
   height: 100%;
   text-align: center;
   padding-top: 30px;
-  padding-bottom: 220px;
-  background: linear-gradient(rgba(65, 100, 201, 0.8), rgba(65, 100, 201, 0.8)),
-    url("../Gambar/header_andhika.jpeg");
+  padding-bottom: 260px;
+  background: linear-gradient(rgba(65, 100, 201, 0.8), rgba(65, 100, 201, 0.8)),url("../Gambar/header_andhika.jpeg");
   background-size: cover;
   background-position: top;
+  margin-right: 20px; 
 }
 
 .content-container {
@@ -207,6 +208,7 @@ header img {
   float: left;
   width: 75%;
   padding-top: 30px;
+  margin-left: 20px; 
 }
 
 .card {
@@ -226,6 +228,10 @@ header img {
 .card-body {
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+.card-body ul li strong {
+  vertical-align: top;
 }
 
 .contact {
