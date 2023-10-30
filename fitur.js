@@ -20,3 +20,12 @@ document.getElementById('connectButton').addEventListener('click', function () {
     window.open(linkedinProfileURL, '_blank');
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    // Ambil semua elemen dengan class 'fade'
+    var fadeElements = document.querySelectorAll(".fade");
+
+    // Tambahkan class 'show' untuk semua elemen dengan class 'fade' setelah halaman dimuat
+    fadeElements.forEach(function (element) {
+        element.classList.add("show");
+    });
+});

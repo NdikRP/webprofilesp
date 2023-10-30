@@ -11,7 +11,7 @@ body {
 body::before {
   content: "";
   background-image: url("../Gambar/back-image.jpg");
-  background-size: 50%;
+  background-size: 30%;
   position: absolute;
   top: 0;
   left: 0;
@@ -19,16 +19,12 @@ body::before {
   height: 100%;
   opacity: 0.3;
   z-index: -1;
+  animation: fadeInBackground 3s ease forwards, moveBackground 30s linear infinite;
 }
 
 header img {
   border-radius: 50%;
   width: 100px;
-}
-
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .button {
@@ -202,6 +198,8 @@ header img {
   color: #fff;
   font-size: 14px;
   line-height: 25px;
+  padding: 0 20px; 
+
 }
 
 .detail-section {
@@ -286,5 +284,20 @@ footer p {
   clear: both;
 }
 
+.fade {
+  opacity: 0;
+  transition: opacity 2s;
+}
 
+.fade.show {
+  opacity: 1;
+}
 
+ul {
+  padding-left: 20px; 
+  list-style-position: inside;
+}
+
+li {
+  margin-bottom: 5px; 
+}
